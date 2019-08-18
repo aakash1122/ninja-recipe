@@ -1,0 +1,186 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+a{
+  text-decoration: none !important;
+  color: inherit;
+}
+
+body{
+  font-family: 'Nunito', monospace !important;
+}
+
+.navbar{
+  .navbar-brand{
+    font-size: 2em;
+    color: $pl2;
+    font-family: 'Righteous', monospace;
+    transition: all 0.5s;
+
+    &:hover{
+      color: $pl1;
+    }
+  }
+  padding: 14px;
+  background: $pl4 !important;
+  color: #fff !important;
+  padding:15px 0px;
+  .navbar-nav .nav-link{
+    margin: 0px 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    &:hover{
+      font-weight: bold;
+    }
+  }
+}
+
+.hero{
+  color: #fff;
+  min-height: 90vh !important;
+  background: linear-gradient(#61234ee0, #61234ee0), url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .col-7 {
+    h1{
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    span{
+      font-family: Righteous;
+      color: #ff5858;
+      font-weight: bold;
+    }
+    }
+    .btn{
+      background: $pl2;
+      font-size: 20px;
+      color: #fff;
+      width: 268px;
+      padding: 8px 20px;
+      letter-spacing: 3px;
+      background: #ff5858;
+      font-weight: 600;
+    }
+    p{
+      width: 70%;
+      color: #ffffffad;
+    }
+  }
+
+  .col-4{
+    padding: 50px 20px !important;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    input{
+      height: 55px;
+      border: none;
+
+    }
+    .btn{
+      background: $pl3;
+      font-size: 20px;
+      color: #fff;
+      width: 175;
+      padding: 5px 20px;
+    }
+  }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #e5e5e5ab !important; /* Firefox */
+}
+
+.form-container{
+  form{
+    input{
+      font-size: 22px;
+      padding: 20px;
+      border: none;
+      background: #495057;
+      color: #fff;
+      border-radius: 10px;
+      &:focus{
+        background: #495057;
+        color: #fff;
+        border-color: #000 !important;
+        outline: 0;
+      }
+    }
+    textarea{
+      font-size: 22px;
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      background: #495057;
+      color: #fff;
+      &:focus{
+        background: #495057;
+        color: #fff;
+        border-color: #000 !important;
+        outline: 0;
+      }
+    }
+  }
+}
+
+.recipe-container{
+  h1{
+    font-family: "Righteous", monospace;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #6c757d;
+    margin: 30px 30px;
+  }
+  hr{
+    width: 12% !important;
+    background: #000000e6;
+  }
+  .card{
+    cursor: pointer;
+    transition: all 0.4s ease;
+    &:hover{
+      background: linear-gradient(to right,$pl2, #2a2361);
+      color: #fff !important;
+      transform: translateY(10px);
+    }
+  }
+  .card-title{
+    font-size: 20px
+  }
+}
+
+.show-recipe{
+  .recipe-desc{
+    &::first-letter{
+      font-size: 40px;
+      color: $pl2;
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
