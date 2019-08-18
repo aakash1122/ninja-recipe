@@ -8,7 +8,7 @@
 
         @foreach ($recipes as $recipe)
         <a href="/recipe/{{$recipe->id}}">
-            <div class="card m-1 mb-3 shadow" style="max-width: 600px">
+            <div class="card m-1 mb-3 shadow" style="max-width: 600px; max-height:210px; overflow:hidden">
                 <div class="row no-gutters">
                     <div class="col-md-5">
                         <img src="{{ $recipe->image_link }}" class="card-img" alt="Image" style="height:100% ;object-fit: cover">

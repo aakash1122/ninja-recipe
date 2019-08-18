@@ -16,11 +16,11 @@
             <p class="mt-3">Only if you want to publish Recipes</p>
             <form>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="background:#343a40">
 
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="background:#343a40">
                 </div>
 
                 <button type="submit" class="btn">Submit</button>
