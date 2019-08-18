@@ -8,7 +8,7 @@
 
         @foreach ($recipes as $recipe)
         <a href="/recipe/{{$recipe->id}}">
-            <div class="card m-1 mb-3 shadow" style="max-width: 600px; max-height:210px; overflow:hidden">
+            <div class="card m-1 mb-3 shadow" style="max-width: 600px; max-height:220px; overflow:hidden">
                 <div class="row no-gutters">
                     <div class="col-md-5">
                         <img src="{{ $recipe->image_link }}" class="card-img" alt="Image" style="height:100% ;object-fit: cover">
@@ -16,7 +16,7 @@
                     <div class="col-md-7">
                         <div class="card-body">
                             <h5 class="card-title">{{ str_limit( $recipe->title, 80 )}}</h5>
-                            <p class="card-text">{{ str_limit($recipe->description, 150) }}</p>
+                            <p class="card-text">{{ str_limit($recipe->description, 130) }}</p>
                             <p class="card-text font-italic">Created At -{{ $recipe->created_at }}</p>
                         </div>
                     </div>
